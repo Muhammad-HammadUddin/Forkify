@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: linear-gradient(to right bottom, #FBDB89, #F48982);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #FAD088;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+   
+    height: 70px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.logo {
+    width: 30%;
+}
+
+.search {
+    width: 50%;
+}
+.add-bookmark{
+    display: flex;
+    gap:10px
+}
+i{
+    font-size: 12px;
+}
+
+
+.input {
+    width: 60%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    overflow: hidden; /* Prevents main content overflow */
+}
+
+.recipies {
+    overflow-y: auto; /* Enables vertical scroll */
+    overflow-x: hidden;
+    height: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+}
+
+.right-content {
+    overflow-y: auto; /* Enables vertical scroll */
+    overflow-x: hidden;
+    height: 100%;
+    padding: 10px;
+    background-color: #FAD088;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    width: 95%;
+    gap:20px
+}
+
+.item-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    
+}
+
+.item-img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+
+.item-content {
+    
+    text-align: left;
+}
+
+.item-content h6 {
+    color: #e2c579;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.card {
+    margin-bottom: 10px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    width: auto ;
+    border-radius: 8px;
+}
+.right{
+    width: 80%;
+    height: 100%;
+    
+    margin: auto;
+
+}
+
+button{
+    background-color:  #F48982 !important;
+}
+@media only screen and (max-width:1000px){
+    .items {
+        
+        flex-direction: column;
+        
+    }
+    .item-img{
+        margin: auto;
+        display: flex;
+        align-items: center;
+        width: 100%;
+    }
+    .item-img img{
+        margin: auto;
+        align-self: center;
+    }
+}
